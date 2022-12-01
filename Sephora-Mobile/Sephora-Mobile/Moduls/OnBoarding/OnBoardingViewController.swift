@@ -17,6 +17,7 @@ class OnBoardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         self.view.backgroundColor = (#colorLiteral(red: 0.8823529412, green: 0.9098039216, blue: 0.9647058824, alpha: 1))
         btnLogin.addTarget(self, action: #selector(onNextScreen), for: .touchUpInside)
         btnLogin.layer.cornerRadius = 10

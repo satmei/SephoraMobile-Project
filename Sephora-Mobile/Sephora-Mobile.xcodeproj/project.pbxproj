@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA1A623C29348DD0002D286A /* AktivasiAkunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1A623B29348DD0002D286A /* AktivasiAkunViewController.swift */; };
+		EA1A623E29348DEA002D286A /* AktivasiAkunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1A623D29348DEA002D286A /* AktivasiAkunViewController.xib */; };
 		EA412A03292E1ADB00B91FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA412A02292E1ADB00B91FE3 /* AppDelegate.swift */; };
 		EA412A05292E1ADB00B91FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA412A04292E1ADB00B91FE3 /* ViewController.swift */; };
 		EA412A08292E1ADB00B91FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA412A06292E1ADB00B91FE3 /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA1A623B29348DD0002D286A /* AktivasiAkunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktivasiAkunViewController.swift; sourceTree = "<group>"; };
+		EA1A623D29348DEA002D286A /* AktivasiAkunViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AktivasiAkunViewController.xib; sourceTree = "<group>"; };
 		EA4129FF292E1ADB00B91FE3 /* Sephora-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sephora-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA412A02292E1ADB00B91FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA412A04292E1ADB00B91FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA1A623A29348D95002D286A /* AktivasiAkun */ = {
+			isa = PBXGroup;
+			children = (
+				EA1A623B29348DD0002D286A /* AktivasiAkunViewController.swift */,
+				EA1A623D29348DEA002D286A /* AktivasiAkunViewController.xib */,
+			);
+			path = AktivasiAkun;
+			sourceTree = "<group>";
+		};
 		EA4129F6292E1ADB00B91FE3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		EA412A14292E1AF500B91FE3 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				EA1A623A29348D95002D286A /* AktivasiAkun */,
 				EAF17028293099190021B7CC /* Register */,
 				EA412A1C292F06FB00B91FE3 /* Login */,
 				EA412A15292E1B0B00B91FE3 /* OnBoarding */,
@@ -206,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA412A20292F073F00B91FE3 /* LoginViewController.xib in Resources */,
+				EA1A623E29348DEA002D286A /* AktivasiAkunViewController.xib in Resources */,
 				EA412A0D292E1ADE00B91FE3 /* LaunchScreen.storyboard in Resources */,
 				EAF1702C293099790021B7CC /* RegisterViewController.xib in Resources */,
 				EA412A2E292F253300B91FE3 /* Roboto-Thin.ttf in Resources */,
@@ -224,6 +239,7 @@
 			files = (
 				EA412A1E292F071600B91FE3 /* LoginViewController.swift in Sources */,
 				EAF1702A293099660021B7CC /* RegisterViewController.swift in Sources */,
+				EA1A623C29348DD0002D286A /* AktivasiAkunViewController.swift in Sources */,
 				EA412A17292E1B3000B91FE3 /* OnBoardingViewController.swift in Sources */,
 				EA412A05292E1ADB00B91FE3 /* ViewController.swift in Sources */,
 				EA412A03292E1ADB00B91FE3 /* AppDelegate.swift in Sources */,

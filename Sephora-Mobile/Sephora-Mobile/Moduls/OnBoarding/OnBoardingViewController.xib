@@ -117,7 +117,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evj-et-ubC">
-                    <rect key="frame" x="131" y="568" width="64" height="39"/>
+                    <rect key="frame" x="161" y="568" width="64" height="39"/>
                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                     <state key="normal" title="Buat Akun"/>
                 </button>
@@ -137,7 +137,7 @@
                 <constraint firstItem="OQf-JC-FWg" firstAttribute="top" secondItem="bBP-aA-VuY" secondAttribute="bottom" constant="30" id="Q27-28-7H5"/>
                 <constraint firstItem="upN-yT-hma" firstAttribute="centerY" secondItem="Evj-et-ubC" secondAttribute="centerY" id="TTp-bA-tk9"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Evj-et-ubC" secondAttribute="bottom" constant="60" id="W5f-nt-VKj"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Evj-et-ubC" secondAttribute="trailing" constant="180" id="hTr-hy-L8j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Evj-et-ubC" secondAttribute="trailing" constant="150" id="hTr-hy-L8j"/>
                 <constraint firstItem="bBP-aA-VuY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sSQ-sc-XGQ"/>
                 <constraint firstItem="OQf-JC-FWg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tDI-L3-suf"/>
                 <constraint firstItem="eBM-7S-kom" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vBu-dC-76V"/>

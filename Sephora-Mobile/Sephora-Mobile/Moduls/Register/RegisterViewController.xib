@@ -20,8 +20,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Sephora_Mobile" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="0xF-2q-wGd" id="WhN-Oq-9n8"/>
                 <outlet property="btnNext" destination="rik-6p-tbL" id="zE2-M9-f31"/>
-                <outlet property="txtShadow1" destination="oT2-4G-6tt" id="L6U-19-6UM"/>
+                <outlet property="column1" destination="oT2-4G-6tt" id="5rk-Pj-668"/>
+                <outlet property="column2" destination="MuI-QE-4fM" id="v1p-yc-o1c"/>
+                <outlet property="column3" destination="XZK-fz-soG" id="HmV-25-RrC"/>
+                <outlet property="column4" destination="ULw-lN-I9x" id="awo-TJ-lOu"/>
+                <outlet property="column5" destination="lHr-cd-2Cn" id="oVv-WW-ldG"/>
+                <outlet property="registerView" destination="BqV-zF-iTl" id="ReE-Ay-Egc"/>
+                <outlet property="txtEmail" destination="EIN-bY-QWs" id="TfW-S3-Plp"/>
+                <outlet property="txtNIK" destination="sxd-Pg-ZoM" id="td3-rU-g3X"/>
+                <outlet property="txtNamaLengkap" destination="zQi-mm-t9e" id="Sb0-km-qCt"/>
+                <outlet property="txtTelpon" destination="EhR-KL-wd3" id="Gtb-sf-pY4"/>
+                <outlet property="txtTgl" destination="cef-Tc-Arq" id="qU4-Dz-RDe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="5ku-FG-mCM"/>
             </connections>
         </placeholder>
@@ -30,9 +41,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cl9-6P-tG2">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cl9-6P-tG2">
                     <rect key="frame" x="40" y="402" width="295" height="48"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ctb-or-Td5">
                             <rect key="frame" x="2" y="9" width="290" height="30"/>
@@ -44,28 +54,81 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rik-6p-tbL">
-                    <rect key="frame" x="280" y="603" width="75" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.18431372549019609" green="0.50980392156862742" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="Selanjutnya">
-                        <color key="titleColor" red="0.8553900123" green="0.91626507040000005" blue="0.99878627060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buat Akun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-8R-802">
-                    <rect key="frame" x="145" y="43" width="84" height="22"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buat Akun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-8R-802">
+                    <rect key="frame" x="145" y="32" width="85" height="22"/>
                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-zF-iTl">
-                    <rect key="frame" x="20" y="73" width="335" height="540"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-zF-iTl">
+                    <rect key="frame" x="20" y="109" width="335" height="449"/>
                     <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MuI-QE-4fM">
+                            <rect key="frame" x="20" y="195" width="295" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhR-KL-wd3">
+                                    <rect key="frame" x="17" y="9" width="275" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZK-fz-soG">
+                            <rect key="frame" x="20" y="260" width="295" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-mm-t9e">
+                                    <rect key="frame" x="17" y="10" width="275" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULw-lN-I9x">
+                            <rect key="frame" x="20" y="328" width="295" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cef-Tc-Arq">
+                                    <rect key="frame" x="18" y="9" width="274" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Date" translatesAutoresizingMaskIntoConstraints="NO" id="zkh-v0-1CT">
+                                    <rect key="frame" x="266" y="15" width="14" height="15"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-24-bxN">
+                            <rect key="frame" x="20" y="105" width="295" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHr-cd-2Cn">
+                            <rect key="frame" x="20" y="393" width="295" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIN-bY-QWs">
+                                    <rect key="frame" x="17" y="9" width="275" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAJ-si-L3M">
-                            <rect key="frame" x="20" y="3" width="295" height="58"/>
+                            <rect key="frame" x="20" y="26" width="295" height="58"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KTP" translatesAutoresizingMaskIntoConstraints="NO" id="YVw-cO-kcH">
@@ -90,71 +153,86 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-4G-6tt">
-                            <rect key="frame" x="20" y="78" width="295" height="48"/>
+                            <rect key="frame" x="20" y="128" width="295" height="48"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxd-Pg-ZoM">
-                                    <rect key="frame" x="2" y="9" width="290" height="30"/>
+                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxd-Pg-ZoM">
+                                    <rect key="frame" x="17" y="9" width="275" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MuI-QE-4fM">
-                            <rect key="frame" x="20" y="142" width="295" height="48"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EhR-KL-wd3">
-                                    <rect key="frame" x="2" y="9" width="290" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZK-fz-soG">
-                            <rect key="frame" x="20" y="206" width="295" height="48"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-mm-t9e">
-                                    <rect key="frame" x="2" y="10" width="290" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULw-lN-I9x">
-                            <rect key="frame" x="20" y="281" width="295" height="48"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cef-Tc-Arq">
-                                    <rect key="frame" x="2" y="9" width="290" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.96862745098039216" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xF-2q-wGd">
+                    <rect key="frame" x="20" y="38" width="32" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="awD-cK-k61"/>
+                        <constraint firstAttribute="height" constant="32" id="io1-yN-Lby"/>
+                    </constraints>
+                    <state key="normal" image="Back">
+                        <string key="title" base64-UTF8="YES">
+Cg
+</string>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQx-8n-NOH">
+                    <rect key="frame" x="0.0" y="594" width="375" height="128"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rik-6p-tbL">
+                            <rect key="frame" x="20" y="16" width="335" height="40"/>
+                            <color key="backgroundColor" red="0.18431372549019609" green="0.50980392156862742" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="FvA-dB-iGo"/>
+                                <constraint firstAttribute="width" constant="335" id="oNB-wm-nIM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="Selanjutnya">
+                                <color key="titleColor" red="0.8553900123" green="0.91626507040000005" blue="0.99878627060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="rik-6p-tbL" firstAttribute="top" secondItem="QQx-8n-NOH" secondAttribute="topMargin" constant="8" id="0Js-zU-8We"/>
+                        <constraint firstItem="rik-6p-tbL" firstAttribute="centerX" secondItem="QQx-8n-NOH" secondAttribute="centerX" id="f7t-1b-8lq"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QQx-8n-NOH" firstAttribute="top" secondItem="BqV-zF-iTl" secondAttribute="bottom" constant="36" id="0Iy-mT-nGU"/>
+                <constraint firstItem="Vkf-8R-802" firstAttribute="leading" secondItem="0xF-2q-wGd" secondAttribute="trailing" constant="93" id="4TQ-4F-w7G"/>
+                <constraint firstAttribute="bottom" secondItem="Cl9-6P-tG2" secondAttribute="bottom" constant="217" id="B2I-IS-FwH"/>
+                <constraint firstItem="Vkf-8R-802" firstAttribute="firstBaseline" secondItem="0xF-2q-wGd" secondAttribute="baseline" id="FbP-ka-tUp"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="leading" secondItem="0xF-2q-wGd" secondAttribute="leading" id="IY1-44-SW4"/>
+                <constraint firstAttribute="bottom" secondItem="QQx-8n-NOH" secondAttribute="bottom" constant="-55" id="Jg2-Op-h31"/>
+                <constraint firstItem="Cl9-6P-tG2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="402" id="LIU-nT-g6f"/>
+                <constraint firstItem="QQx-8n-NOH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qh0-pa-KG2"/>
+                <constraint firstItem="0xF-2q-wGd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="18" id="SCT-sZ-TZg"/>
+                <constraint firstItem="0xF-2q-wGd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="TYJ-wE-RN9"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UWC-lg-lI1"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="centerX" secondItem="QQx-8n-NOH" secondAttribute="centerX" id="Yol-au-6ck"/>
+                <constraint firstItem="QQx-8n-NOH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YpO-iX-gbO"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="centerX" secondItem="Cl9-6P-tG2" secondAttribute="centerX" id="aWZ-il-NTV"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="centerX" secondItem="Vkf-8R-802" secondAttribute="centerX" id="afW-UU-EON"/>
+                <constraint firstItem="BqV-zF-iTl" firstAttribute="top" secondItem="0xF-2q-wGd" secondAttribute="bottom" constant="39" id="mBN-at-TIf"/>
+                <constraint firstItem="Cl9-6P-tG2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="qNI-Mh-eQP"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="96.799999999999997" y="53.523238380809602"/>
         </view>
     </objects>
     <resources>
+        <image name="Back" width="24" height="24"/>
+        <image name="Date" width="15" height="17"/>
         <image name="KTP" width="40" height="40"/>
+        <image name="Line" width="295" height="1"/>
     </resources>
 </document>

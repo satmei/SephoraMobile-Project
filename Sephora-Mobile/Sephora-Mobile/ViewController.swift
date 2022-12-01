@@ -16,11 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    @objc
-//    func NextScreen() {
-//        let loginVC = LoginViewController()
-//        self.navigationController?.pushViewController(loginVC, animated: true)
-//    }
+    @objc
+    func btnBack() {
+        let btnBack = OnBoardingViewController()
+        self.navigationController?.pushViewController(btnBack, animated: false)
+    }
 
 }
 
