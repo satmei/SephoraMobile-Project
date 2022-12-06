@@ -54,12 +54,6 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buat Akun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-8R-802">
-                    <rect key="frame" x="145" y="32" width="85" height="22"/>
-                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqV-zF-iTl">
                     <rect key="frame" x="20" y="109" width="335" height="449"/>
                     <subviews>
@@ -98,7 +92,7 @@
                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cef-Tc-Arq">
                                     <rect key="frame" x="18" y="9" width="274" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="textColor" red="0.95293587449999995" green="0.96828871969999997" blue="0.99422413109999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
@@ -204,13 +198,19 @@ Cg
                         <constraint firstItem="rik-6p-tbL" firstAttribute="centerX" secondItem="QQx-8n-NOH" secondAttribute="centerX" id="f7t-1b-8lq"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Buat Akun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkf-8R-802">
+                    <rect key="frame" x="145" y="43" width="85" height="22"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="QQx-8n-NOH" firstAttribute="top" secondItem="BqV-zF-iTl" secondAttribute="bottom" constant="36" id="0Iy-mT-nGU"/>
                 <constraint firstItem="Vkf-8R-802" firstAttribute="leading" secondItem="0xF-2q-wGd" secondAttribute="trailing" constant="93" id="4TQ-4F-w7G"/>
                 <constraint firstAttribute="bottom" secondItem="Cl9-6P-tG2" secondAttribute="bottom" constant="217" id="B2I-IS-FwH"/>
-                <constraint firstItem="Vkf-8R-802" firstAttribute="firstBaseline" secondItem="0xF-2q-wGd" secondAttribute="baseline" id="FbP-ka-tUp"/>
+                <constraint firstItem="Vkf-8R-802" firstAttribute="firstBaseline" secondItem="0xF-2q-wGd" secondAttribute="baseline" constant="5.5" id="FbP-ka-tUp"/>
                 <constraint firstItem="BqV-zF-iTl" firstAttribute="leading" secondItem="0xF-2q-wGd" secondAttribute="leading" id="IY1-44-SW4"/>
                 <constraint firstAttribute="bottom" secondItem="QQx-8n-NOH" secondAttribute="bottom" constant="-55" id="Jg2-Op-h31"/>
                 <constraint firstItem="Cl9-6P-tG2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="402" id="LIU-nT-g6f"/>

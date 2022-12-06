@@ -38,6 +38,9 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var column5: UIView!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        btnNext.addTarget(self, action: #selector(, for: .touchUpInside)
@@ -50,7 +53,14 @@ class RegisterViewController: UIViewController {
         txtTgl.placeholder = "Tanggal"
         txtEmail.placeholder = "Email"
         btnBack.addTarget(self, action: #selector(onBack), for: .touchUpInside)
-        btnBack.layer.cornerRadius = 10
+        btnNext.addTarget(self, action: #selector(onNextScreen), for: .touchUpInside)
+        btnBack.layer.cornerRadius = 8
+        btnBack.layer.shadowColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0).cgColor
+        btnBack.layer.shadowOffset = CGSize(width: 0, height: 1.75)
+        btnBack.layer.shadowRadius = 3
+        btnBack.layer.shadowOpacity = 0.35
+        
+        
         registerView.layer.shadowColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0).cgColor
         registerView.layer.shadowOffset = CGSize(width: 0, height: 1.75)
         registerView.layer.shadowRadius = 3
@@ -66,5 +76,13 @@ class RegisterViewController: UIViewController {
     @objc
     func onBack(){
     self.navigationController?.popViewController(animated: false)
+    }
+    
+    @objc
+    func onNextScreen() {
+        let popUp = RegisterPopUpViewController()
+        popUp.modalPresentationStyle = .custom
+        self.present(popUp, animated: false)
+        
     }
 }

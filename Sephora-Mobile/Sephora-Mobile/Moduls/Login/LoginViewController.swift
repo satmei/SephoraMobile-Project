@@ -3,7 +3,7 @@
 //  Sephora-Mobile
 //
 //  Created by Key on 24/11/22.
-//  Copyright © 2022 Key. All rights reserved.
+//  Copyright © 2022 Key. All rights $(SRCROOT)/Carthage/Build/iOS/Alamofire.framework.
 
 import Foundation
 import UIKit
@@ -11,8 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     var iconClick = false
-    let imageicon = UIImage()
-    
+
     @IBOutlet weak var btnLogin2: UIButton!
     
     @IBOutlet weak var viewLogin: UIView!
@@ -27,6 +26,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var column2: UIView!
     
+    @IBOutlet weak var imageicon: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = (#colorLiteral(red: 0.8823529412, green: 0.9098039216, blue: 0.9647058824, alpha: 1))
@@ -40,7 +42,7 @@ class LoginViewController: UIViewController {
         viewContent.layer.shadowRadius = 5
         viewContent.layer.cornerRadius = 20
         viewContent.layer.shadowOpacity = 0.45
-//        btnLogin2.addTarget(self, action: #selector(loginVC2), for: .touchUpInside)
+        btnLogin2.addTarget(self, action: #selector(onNextScreen1), for: .touchUpInside)
         btnLogin2.layer.cornerRadius = 5
         btnLogin2.frame = CGRect(x: 0, y: 0, width: 335, height: 40)
         txtUsername.placeholder = "Username"
@@ -49,11 +51,31 @@ class LoginViewController: UIViewController {
         column1.layer.cornerRadius = 10
         column2.layer.cornerRadius = 10
         
-//        imageicon.images = UIImage(named: "Eye")
+
+    }
+    
+    @objc
+    func resultData(_ sender : Any) {
+        print("\(txtUsername.text!)")
+        print("\(txtPassword.text!)")
+    }
+    
+    @objc
+    func onNextScreen1(){
+        let popUp = LoginPopUpViewController()
+        popUp.modalPresentationStyle = .custom
+        self.present(popUp, animated: false)
+        print("popup jalan")
+        
+    }
+}
+
+
+//        imageicon.image = UIImage(named: "Eye")
 //
 //        let contentView = UIView()
 //        contentView.addSubview(imageicon)
-//
+
 //        contentView.frame = CGRect(x: 0, y: 0, width: UIImage(named: "Eye")!.size.width, height: UIImage(named: "Eye")!.size.height)
 //
 //        imageicon.frame = CGRect(x: -10, y: 0, width: UIImage(named: "Eye")!.size.width, height: UIImage(named: "Eye")!.size.height)
@@ -63,8 +85,7 @@ class LoginViewController: UIViewController {
 //        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
 //        imageicon.isUserInteractionEnabled = true
 //        imageicon.addGestureRecognizer(tapgesturRecognizer:)
-    }
-    
+
 //    @objc
 //    func imageTapped(tapGestureRecognizer:UITapGestureRecognizer) {
 //        let tappedImage = tapGestureRecognizer.view as! UIImageView
@@ -83,4 +104,3 @@ class LoginViewController: UIViewController {
 //        }
 //
 //    }
-}

@@ -23,6 +23,7 @@
                 <outlet property="btnLogin2" destination="GNv-PV-Jd2" id="rCK-3a-NfY"/>
                 <outlet property="column1" destination="XTN-rM-qfN" id="uVe-g2-XLe"/>
                 <outlet property="column2" destination="WBG-xI-mbl" id="m8c-05-b7B"/>
+                <outlet property="imageicon" destination="9Ci-Ce-KLB" id="EKI-pi-sPs"/>
                 <outlet property="txtPassword" destination="Cg4-jr-2Y5" id="oe1-g1-Uno"/>
                 <outlet property="txtUsername" destination="7ts-ep-fuc" id="1lB-15-rC4"/>
                 <outlet property="view" destination="iN0-l3-epB" id="bpm-IS-7PG"/>

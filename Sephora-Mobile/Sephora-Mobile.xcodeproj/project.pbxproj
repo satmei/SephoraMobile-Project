@@ -19,9 +19,27 @@
 		EA412A1E292F071600B91FE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA412A1D292F071600B91FE3 /* LoginViewController.swift */; };
 		EA412A20292F073F00B91FE3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA412A1F292F073F00B91FE3 /* LoginViewController.xib */; };
 		EA412A2E292F253300B91FE3 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA412A26292F24B800B91FE3 /* Roboto-Thin.ttf */; };
+		EA75DE8E293973350062F291 /* RegisterPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA75DE8D293973350062F291 /* RegisterPopUpViewController.swift */; };
+		EA75DE952939FA3C0062F291 /* LoginPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA75DE942939FA3C0062F291 /* LoginPopUpViewController.swift */; };
+		EA75DE972939FD840062F291 /* LoginPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA75DE962939FD840062F291 /* LoginPopUpViewController.xib */; };
+		EA76C980293D9590009F3725 /* RegisterPopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA76C97F293D9590009F3725 /* RegisterPopUpViewController.xib */; };
 		EAF1702A293099660021B7CC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF17029293099660021B7CC /* RegisterViewController.swift */; };
 		EAF1702C293099790021B7CC /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAF1702B293099790021B7CC /* RegisterViewController.xib */; };
+		EAFC97C9293F379900074BAD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC97C8293F379900074BAD /* Alamofire.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA5E3E72293DF84D00CF5867 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EA1A623B29348DD0002D286A /* AktivasiAkunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AktivasiAkunViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +67,13 @@
 		EA412A2B292F24B800B91FE3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		EA412A2C292F24B800B91FE3 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 		EA412A2D292F24B800B91FE3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EA75DE8D293973350062F291 /* RegisterPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPopUpViewController.swift; sourceTree = "<group>"; };
+		EA75DE942939FA3C0062F291 /* LoginPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPopUpViewController.swift; sourceTree = "<group>"; };
+		EA75DE962939FD840062F291 /* LoginPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPopUpViewController.xib; sourceTree = "<group>"; };
+		EA76C97F293D9590009F3725 /* RegisterPopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPopUpViewController.xib; sourceTree = "<group>"; };
 		EAF17029293099660021B7CC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EAF1702B293099790021B7CC /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		EAFC97C8293F379900074BAD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFC97C9293F379900074BAD /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,7 @@
 			children = (
 				EA412A01292E1ADB00B91FE3 /* Sephora-Mobile */,
 				EA412A00292E1ADB00B91FE3 /* Products */,
+				EAFC97C4293F325300074BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +132,8 @@
 		EA412A14292E1AF500B91FE3 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
+				EA75DE912939F9A20062F291 /* PopUpLogin */,
+				EA75DE8A29396FD00062F291 /* PopUp */,
 				EA1A623A29348D95002D286A /* AktivasiAkun */,
 				EAF17028293099190021B7CC /* Register */,
 				EA412A1C292F06FB00B91FE3 /* Login */,
@@ -152,6 +179,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		EA75DE8A29396FD00062F291 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				EA75DE8D293973350062F291 /* RegisterPopUpViewController.swift */,
+				EA76C97F293D9590009F3725 /* RegisterPopUpViewController.xib */,
+			);
+			path = PopUp;
+			sourceTree = "<group>";
+		};
+		EA75DE912939F9A20062F291 /* PopUpLogin */ = {
+			isa = PBXGroup;
+			children = (
+				EA75DE942939FA3C0062F291 /* LoginPopUpViewController.swift */,
+				EA75DE962939FD840062F291 /* LoginPopUpViewController.xib */,
+			);
+			path = PopUpLogin;
+			sourceTree = "<group>";
+		};
 		EAF17028293099190021B7CC /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +204,14 @@
 				EAF1702B293099790021B7CC /* RegisterViewController.xib */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		EAFC97C4293F325300074BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC97C8293F379900074BAD /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +224,8 @@
 				EA4129FB292E1ADB00B91FE3 /* Sources */,
 				EA4129FC292E1ADB00B91FE3 /* Frameworks */,
 				EA4129FD292E1ADB00B91FE3 /* Resources */,
+				EA5E3E72293DF84D00CF5867 /* Copy Files */,
+				EAFC97CA293F37F700074BAD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -222,15 +277,40 @@
 				EA412A20292F073F00B91FE3 /* LoginViewController.xib in Resources */,
 				EA1A623E29348DEA002D286A /* AktivasiAkunViewController.xib in Resources */,
 				EA412A0D292E1ADE00B91FE3 /* LaunchScreen.storyboard in Resources */,
+				EA75DE972939FD840062F291 /* LoginPopUpViewController.xib in Resources */,
 				EAF1702C293099790021B7CC /* RegisterViewController.xib in Resources */,
 				EA412A2E292F253300B91FE3 /* Roboto-Thin.ttf in Resources */,
 				EA412A0A292E1ADE00B91FE3 /* Assets.xcassets in Resources */,
 				EA412A08292E1ADB00B91FE3 /* Main.storyboard in Resources */,
+				EA76C980293D9590009F3725 /* RegisterPopUpViewController.xib in Resources */,
 				EA412A1B292E1F9000B91FE3 /* OnBoardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EAFC97CA293F37F700074BAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA4129FB292E1ADB00B91FE3 /* Sources */ = {
@@ -242,6 +322,8 @@
 				EA1A623C29348DD0002D286A /* AktivasiAkunViewController.swift in Sources */,
 				EA412A17292E1B3000B91FE3 /* OnBoardingViewController.swift in Sources */,
 				EA412A05292E1ADB00B91FE3 /* ViewController.swift in Sources */,
+				EA75DE952939FA3C0062F291 /* LoginPopUpViewController.swift in Sources */,
+				EA75DE8E293973350062F291 /* RegisterPopUpViewController.swift in Sources */,
 				EA412A03292E1ADB00B91FE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +471,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sephora-Mobile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,6 +485,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -407,6 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sephora-Mobile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

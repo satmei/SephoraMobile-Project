@@ -16,11 +16,4 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @objc
-    func btnBack() {
-        let btnBack = OnBoardingViewController()
-        self.navigationController?.pushViewController(btnBack, animated: false)
-    }
-
 }
-
